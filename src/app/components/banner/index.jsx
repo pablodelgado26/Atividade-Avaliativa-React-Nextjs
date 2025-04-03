@@ -1,17 +1,7 @@
 import styles from './banner.module.css';
 
 const Banner = ({title, description, image, likes, comments, author,authorAvatar}) => {
-      const memeOfTheDay = {
-        id: 7,
-        title: "Meme do Dia: Quando seu código funciona de primeira",
-        description:
-          "Este momento raro que todos os desenvolvedores sonham em experimentar!",
-        image: "https://i.imgur.com/vldGJnz.jpg",
-        likes: 2452,
-        comments: 387,
-        author: "SuperCoder",
-        authorAvatar: "https://i.pravatar.cc/150?img=20",
-      };
+
     return (
           <section className={styles.heroSection}>
             <div className={styles.heroContent}>

@@ -1,4 +1,6 @@
 import Banner from "./components/banner";
+import Categories from "./components/categories";
+import Feed from "./components/feed";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import styles from "./page.module.css";
@@ -16,6 +18,10 @@ export default function Home() {
         author="SuperCoder"
         authorAvatar="https://i.pravatar.cc/150?img=20"
       />
+      <Categories />
+      <Feed>
+        
+      </Feed>
       <Footer />
     </div>
   );
