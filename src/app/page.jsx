@@ -1,4 +1,5 @@
 import Banner from "./components/banner";
+import CardCompeticoes from "./components/cardCompeticoes";
 import CardCriadores from "./components/cardCriadores";
 import CardDestaques from "./components/cardDestaque";
 import CardPopulares from "./components/cardPopulares";
@@ -8,6 +9,8 @@ import FeaturedSection from "./components/featuredSection";
 import Feed from "./components/feed";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import NewsLetter from "./components/newsLetter";
+import SideBar from "./components/sideBar";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -132,6 +135,20 @@ export default function Home() {
         bio={"Se não te fizer rir, devolvo seu tempo!"}
         />
       </Criadores>
+
+      <NewsLetter />
+      <SideBar>
+        <CardCompeticoes
+        title={"Competições de Memes 2025"}
+        date={"15 de Maio, 2025"}
+        participants={356}
+        />
+        <CardCompeticoes
+        title={"Workshop: Como Criar Memes Virais"}
+        date={"22 de Maio, 2025"}
+        participants={127}
+        />
+      </SideBar>
       <Footer />
     </div>
   );
