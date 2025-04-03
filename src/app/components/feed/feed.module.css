@@ -38,4 +38,28 @@
     font-weight: bold;
   }
 
+  .feedGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .loadMoreButton {
+    display: block;
+    margin: 0 auto;
+    background-color: #eef0fd;
+    color: #4e5de4;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .loadMoreButton:hover {
+    background-color: #4e5de4;
+    color: white;
+  }
   

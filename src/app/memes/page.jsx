@@ -255,9 +255,7 @@ export default function Home() {
             </div>
 
             <div className={styles.feedGrid}>
-              {/* Aqui mapeamos os memes do array para criar múltiplos cards */}
               {memes.map((meme) => (
-                // COMPONENTE: MemeCard
                 <div key={meme.id} className={styles.memeCard}>
                   <div className={styles.memeCardHeader}>
                     <div className={styles.memeAuthor}>
@@ -274,8 +272,6 @@ export default function Home() {
                   <div className={styles.memeContent}>
                     <h3 className={styles.memeTitle}>{meme.title}</h3>
                     <p className={styles.memeDescription}>{meme.description}</p>
-
-                    {/* COMPONENTE: InteractionBar */}
                     <div className={styles.interactionBar}>
                       <div className={styles.interactionButton}>
                         <span>👍</span>
@@ -294,10 +290,8 @@ export default function Home() {
                         <span>Save</span>
                       </div>
                     </div>
-                    {/* FIM COMPONENTE: InteractionBar */}
                   </div>
                 </div>
-                // FIM COMPONENTE: MemeCard
               ))}
             </div>
 
