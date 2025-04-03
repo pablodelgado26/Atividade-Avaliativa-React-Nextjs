@@ -1,6 +1,8 @@
 import Banner from "./components/banner";
+import CardDestaques from "./components/cardDestaque";
 import CardPopulares from "./components/cardPopulares";
 import Categories from "./components/categories";
+import FeaturedSection from "./components/featuredSection";
 import Feed from "./components/feed";
 import Footer from "./components/footer";
 import Header from "./components/header";
@@ -84,6 +86,29 @@ export default function Home() {
         category={"Relacionamentos"}
         />
       </Feed>
+      <FeaturedSection>
+        <CardDestaques 
+        title={"O código em produção"}
+        image={"https://i.imgur.com/aVy8tFB.jpg"}
+        author={"DevHumor"}
+        category={"Programação"}
+        trending={true}
+        />
+        <CardDestaques
+        title={"Modo escuro vs Modo claro"}
+        image={"https://i.imgur.com/YnGsVzS.jpg"}
+        author={"UIDesigner"}
+        category={"Tecnologia"}
+        trending={true}
+        />
+        <CardDestaques
+        title={"POV: Aula online"}
+        image={"https://i.imgur.com/4MigGYQ.jpg"}
+        author={"ZoomExpert"}
+        category={"Escola"}
+        trending={false}
+        />
+      </FeaturedSection>
       <Footer />
     </div>
   );
