@@ -1,7 +1,9 @@
 import Banner from "./components/banner";
+import CardCriadores from "./components/cardCriadores";
 import CardDestaques from "./components/cardDestaque";
 import CardPopulares from "./components/cardPopulares";
 import Categories from "./components/categories";
+import Criadores from "./components/criadores";
 import FeaturedSection from "./components/featuredSection";
 import Feed from "./components/feed";
 import Footer from "./components/footer";
@@ -109,6 +111,27 @@ export default function Home() {
         trending={false}
         />
       </FeaturedSection>
+
+      <Criadores>
+        <CardCriadores
+        name={"MemeQueen"}
+        avatar={"https://i.pravatar.cc/150?img=23"}
+        followers={"245K"}
+        bio={"Criando memes que fazem seu dia melhor!"}
+        />
+        <CardCriadores
+        name={"FunnyGuy42"}
+        avatar={"https://i.pravatar.cc/150?img=24"}
+        followers={"189K"}
+        bio={"Especialista em memes de programação e gatos"}
+        />
+        <CardCriadores
+        name={"LaughFactory"}
+        avatar={"https://i.pravatar.cc/150?img=25"}
+        followers={"327K"}
+        bio={"Se não te fizer rir, devolvo seu tempo!"}
+        />
+      </Criadores>
       <Footer />
     </div>
   );
